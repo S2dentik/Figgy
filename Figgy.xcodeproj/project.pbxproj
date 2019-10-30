@@ -8,11 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		69BAE1E82366F14800534B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE1E72366F14800534B6E /* AppDelegate.swift */; };
-		69BAE1EC2366F14800534B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE1EB2366F14800534B6E /* ViewController.swift */; };
-		69BAE1EF2366F14800534B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE1ED2366F14800534B6E /* Main.storyboard */; };
+		69BAE1EC2366F14800534B6E /* TrendingGifsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE1EB2366F14800534B6E /* TrendingGifsViewController.swift */; };
+		69BAE1EF2366F14800534B6E /* TrendingGifs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE1ED2366F14800534B6E /* TrendingGifs.storyboard */; };
 		69BAE1F12366F14D00534B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE1F02366F14D00534B6E /* Assets.xcassets */; };
 		69BAE1F42366F14D00534B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE1F22366F14D00534B6E /* LaunchScreen.storyboard */; };
 		69BAE1FF2366F14D00534B6E /* FiggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE1FE2366F14D00534B6E /* FiggyTests.swift */; };
+		69BAE20F2367180C00534B6E /* GiphyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE20E2367180C00534B6E /* GiphyFetcher.swift */; };
+		69BAE21523672E0200534B6E /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE21123672E0100534B6E /* Identifiable.swift */; };
+		69BAE21623672E0200534B6E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE21223672E0100534B6E /* Network.swift */; };
+		69BAE21723672E0200534B6E /* SupplementaryViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE21323672E0200534B6E /* SupplementaryViewType.swift */; };
+		69BAE21823672E0200534B6E /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE21423672E0200534B6E /* StoryboardInstantiable.swift */; };
+		69BAE21A23672E3000534B6E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE21923672E3000534B6E /* ImageCollectionViewCell.swift */; };
+		69BAE21C23672E4E00534B6E /* ActivityIndicatorReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE21B23672E4E00534B6E /* ActivityIndicatorReusableView.swift */; };
+		69BAE21E2367323F00534B6E /* ActivityIndicatorReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE21D2367323F00534B6E /* ActivityIndicatorReusableView.xib */; };
+		69BAE2202369903400534B6E /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE21F2369903400534B6E /* ImageCollectionViewCell.xib */; };
+		69BAE251236996A600534B6E /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE250236996A600534B6E /* URLSessionExtensions.swift */; };
+		69BAE253236996C500534B6E /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE252236996C500534B6E /* NetworkTask.swift */; };
+		69BAE255236996EB00534B6E /* TrendingGifsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE254236996EB00534B6E /* TrendingGifsPresenter.swift */; };
+		69BAE25723699A7100534B6E /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE25623699A7100534B6E /* Gif.swift */; };
+		69BAE25923699D3600534B6E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE25823699D3600534B6E /* Helpers.swift */; };
+		69BAE25B2369A0CB00534B6E /* TrendingGifsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE25A2369A0CB00534B6E /* TrendingGifsBuilder.swift */; };
+		69BAE25F2369BFF000534B6E /* RandomGif.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BAE25E2369BFF000534B6E /* RandomGif.storyboard */; };
+		69BAE2612369C02E00534B6E /* RandomGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE2602369C02E00534B6E /* RandomGifViewController.swift */; };
+		69BAE2632369C19900534B6E /* RandomGifBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE2622369C19900534B6E /* RandomGifBuilder.swift */; };
+		69BAE2652369CEB200534B6E /* RandomGifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAE2642369CEB200534B6E /* RandomGifPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +47,33 @@
 /* Begin PBXFileReference section */
 		69BAE1E42366F14800534B6E /* Figgy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Figgy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BAE1E72366F14800534B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69BAE1EB2366F14800534B6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		69BAE1EE2366F14800534B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69BAE1EB2366F14800534B6E /* TrendingGifsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGifsViewController.swift; sourceTree = "<group>"; };
+		69BAE1EE2366F14800534B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TrendingGifs.storyboard; sourceTree = "<group>"; };
 		69BAE1F02366F14D00534B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69BAE1F32366F14D00534B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69BAE1F52366F14D00534B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69BAE1FA2366F14D00534B6E /* FiggyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiggyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BAE1FE2366F14D00534B6E /* FiggyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiggyTests.swift; sourceTree = "<group>"; };
 		69BAE2002366F14D00534B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BAE20E2367180C00534B6E /* GiphyFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyFetcher.swift; sourceTree = "<group>"; };
+		69BAE21123672E0100534B6E /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		69BAE21223672E0100534B6E /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		69BAE21323672E0200534B6E /* SupplementaryViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplementaryViewType.swift; sourceTree = "<group>"; };
+		69BAE21423672E0200534B6E /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		69BAE21923672E3000534B6E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		69BAE21B23672E4E00534B6E /* ActivityIndicatorReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorReusableView.swift; sourceTree = "<group>"; };
+		69BAE21D2367323F00534B6E /* ActivityIndicatorReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityIndicatorReusableView.xib; sourceTree = "<group>"; };
+		69BAE21F2369903400534B6E /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		69BAE250236996A600534B6E /* URLSessionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
+		69BAE252236996C500534B6E /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		69BAE254236996EB00534B6E /* TrendingGifsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGifsPresenter.swift; sourceTree = "<group>"; };
+		69BAE25623699A7100534B6E /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		69BAE25823699D3600534B6E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		69BAE25A2369A0CB00534B6E /* TrendingGifsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingGifsBuilder.swift; sourceTree = "<group>"; };
+		69BAE25E2369BFF000534B6E /* RandomGif.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomGif.storyboard; sourceTree = "<group>"; };
+		69BAE2602369C02E00534B6E /* RandomGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGifViewController.swift; sourceTree = "<group>"; };
+		69BAE2622369C19900534B6E /* RandomGifBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGifBuilder.swift; sourceTree = "<group>"; };
+		69BAE2642369CEB200534B6E /* RandomGifPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGifPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				69BAE1E72366F14800534B6E /* AppDelegate.swift */,
-				69BAE1EB2366F14800534B6E /* ViewController.swift */,
-				69BAE1ED2366F14800534B6E /* Main.storyboard */,
+				69BAE20A2366F28400534B6E /* RecentGifs */,
+				69BAE25D2369BFDB00534B6E /* RandomGif */,
+				69BAE25C2369BF5000534B6E /* Services */,
+				69BAE21023672DF400534B6E /* Protocols */,
+				69BAE24F2369969600534B6E /* Extensions */,
+				69BAE20B2366F29B00534B6E /* IBFiles */,
 				69BAE2092366F1D900534B6E /* SupportingFiles */,
 			);
 			path = Figgy;
@@ -102,6 +144,69 @@
 				69BAE1F52366F14D00534B6E /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		69BAE20A2366F28400534B6E /* RecentGifs */ = {
+			isa = PBXGroup;
+			children = (
+				69BAE1EB2366F14800534B6E /* TrendingGifsViewController.swift */,
+				69BAE254236996EB00534B6E /* TrendingGifsPresenter.swift */,
+				69BAE25A2369A0CB00534B6E /* TrendingGifsBuilder.swift */,
+				69BAE21923672E3000534B6E /* ImageCollectionViewCell.swift */,
+				69BAE21B23672E4E00534B6E /* ActivityIndicatorReusableView.swift */,
+				69BAE25623699A7100534B6E /* Gif.swift */,
+			);
+			path = RecentGifs;
+			sourceTree = "<group>";
+		};
+		69BAE20B2366F29B00534B6E /* IBFiles */ = {
+			isa = PBXGroup;
+			children = (
+				69BAE1ED2366F14800534B6E /* TrendingGifs.storyboard */,
+				69BAE21F2369903400534B6E /* ImageCollectionViewCell.xib */,
+				69BAE25E2369BFF000534B6E /* RandomGif.storyboard */,
+				69BAE21D2367323F00534B6E /* ActivityIndicatorReusableView.xib */,
+			);
+			path = IBFiles;
+			sourceTree = "<group>";
+		};
+		69BAE21023672DF400534B6E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				69BAE21123672E0100534B6E /* Identifiable.swift */,
+				69BAE21223672E0100534B6E /* Network.swift */,
+				69BAE21423672E0200534B6E /* StoryboardInstantiable.swift */,
+				69BAE21323672E0200534B6E /* SupplementaryViewType.swift */,
+				69BAE252236996C500534B6E /* NetworkTask.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		69BAE24F2369969600534B6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69BAE250236996A600534B6E /* URLSessionExtensions.swift */,
+				69BAE25823699D3600534B6E /* Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69BAE25C2369BF5000534B6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69BAE20E2367180C00534B6E /* GiphyFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69BAE25D2369BFDB00534B6E /* RandomGif */ = {
+			isa = PBXGroup;
+			children = (
+				69BAE2602369C02E00534B6E /* RandomGifViewController.swift */,
+				69BAE2642369CEB200534B6E /* RandomGifPresenter.swift */,
+				69BAE2622369C19900534B6E /* RandomGifBuilder.swift */,
+			);
+			path = RandomGif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +292,10 @@
 			files = (
 				69BAE1F42366F14D00534B6E /* LaunchScreen.storyboard in Resources */,
 				69BAE1F12366F14D00534B6E /* Assets.xcassets in Resources */,
-				69BAE1EF2366F14800534B6E /* Main.storyboard in Resources */,
+				69BAE21E2367323F00534B6E /* ActivityIndicatorReusableView.xib in Resources */,
+				69BAE1EF2366F14800534B6E /* TrendingGifs.storyboard in Resources */,
+				69BAE2202369903400534B6E /* ImageCollectionViewCell.xib in Resources */,
+				69BAE25F2369BFF000534B6E /* RandomGif.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +313,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69BAE1EC2366F14800534B6E /* ViewController.swift in Sources */,
+				69BAE21723672E0200534B6E /* SupplementaryViewType.swift in Sources */,
+				69BAE25923699D3600534B6E /* Helpers.swift in Sources */,
+				69BAE21623672E0200534B6E /* Network.swift in Sources */,
+				69BAE255236996EB00534B6E /* TrendingGifsPresenter.swift in Sources */,
+				69BAE251236996A600534B6E /* URLSessionExtensions.swift in Sources */,
+				69BAE25B2369A0CB00534B6E /* TrendingGifsBuilder.swift in Sources */,
+				69BAE21C23672E4E00534B6E /* ActivityIndicatorReusableView.swift in Sources */,
+				69BAE21A23672E3000534B6E /* ImageCollectionViewCell.swift in Sources */,
+				69BAE2632369C19900534B6E /* RandomGifBuilder.swift in Sources */,
+				69BAE1EC2366F14800534B6E /* TrendingGifsViewController.swift in Sources */,
+				69BAE2652369CEB200534B6E /* RandomGifPresenter.swift in Sources */,
+				69BAE21523672E0200534B6E /* Identifiable.swift in Sources */,
+				69BAE21823672E0200534B6E /* StoryboardInstantiable.swift in Sources */,
+				69BAE25723699A7100534B6E /* Gif.swift in Sources */,
+				69BAE20F2367180C00534B6E /* GiphyFetcher.swift in Sources */,
 				69BAE1E82366F14800534B6E /* AppDelegate.swift in Sources */,
+				69BAE2612369C02E00534B6E /* RandomGifViewController.swift in Sources */,
+				69BAE253236996C500534B6E /* NetworkTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,12 +353,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		69BAE1ED2366F14800534B6E /* Main.storyboard */ = {
+		69BAE1ED2366F14800534B6E /* TrendingGifs.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				69BAE1EE2366F14800534B6E /* Base */,
 			);
-			name = Main.storyboard;
+			name = TrendingGifs.storyboard;
 			sourceTree = "<group>";
 		};
 		69BAE1F22366F14D00534B6E /* LaunchScreen.storyboard */ = {
@@ -368,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE33WF5A23;
-				INFOPLIST_FILE = Figgy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Figgy/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,7 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE33WF5A23;
-				INFOPLIST_FILE = Figgy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Figgy/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
